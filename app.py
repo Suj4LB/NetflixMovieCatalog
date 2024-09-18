@@ -16,7 +16,7 @@ with open('data/data_movies.json', 'r') as f:
 
 @app.route("/", methods=['GET'])
 def home():
-    return "Hi Sujal-Don ! This app is an API, there is no UI ;-)"
+    return "Hi Sujal-Don, this works! This app is an API, there is no UI ;-)"
 
 
 @app.route('/discover')
@@ -59,7 +59,7 @@ def update_popularity():
 
     data_movies[movie_id]['popularity'] = new_popularity
 
-    return jsonify({'message': 'Popularity updated successfully', 'new_popularity': new_popularity}), 200
+    return jsonify({'message': 'Popularity updated successfully', 'apki new popularity ye hai ': new_popularity}), 200
 
 
 @app.route('/status')
